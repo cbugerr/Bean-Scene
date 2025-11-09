@@ -1,3 +1,10 @@
+:root {
+  --btn-background: #f9c06a;
+  --btn-padding: 14px 26px;
+  --btn-color: #1e1e1e;
+  --btn-radius: 24px;
+}
+
 header .logo {
   font-family: "Clicker Script", cursive;
   font-weight: 400;
@@ -28,6 +35,8 @@ header a {
 
 header {
   background-image: url(img/coffee_image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header nav {
@@ -75,11 +84,12 @@ header li:last-child {
 }
 
 .signup-btn {
-  color: #1e1e1e;
-  background-color: #f9c06a;
-  border-radius: 24px;
-  padding: 14px 27px 15px 27px;
+  color: var(--btn-color);
+  background-color: var(--btn-background);
+  border-radius: var(--btn-radius);
+  padding: var(--btn-padding);
   transition: 0.3s;
+  display: inline-block;
 }
 
 header ul a,
@@ -94,4 +104,37 @@ header ul a:hover,
 
 .signup-btn:hover {
   box-shadow: 0 0 10px 2px #666;
+}
+
+.hero .label {
+  color: white;
+  font-size: 22px;
+}
+
+.hero .title {
+  color: white;
+  font-family: "Clicker Script", cursive;
+  font-size: 220px;
+}
+
+.hero .description {
+  color: white;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.hero {
+  width: 585px;
+  padding-top: 116px;
+  padding-bottom: 95px;
+}
+
+.order-btn {
+  color: var(--btn-color);
+  background-color: var(--btn-background);
+  border-radius: var(--btn-radius);
+  padding: var(--btn-padding);
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
 }
