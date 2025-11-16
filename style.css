@@ -96,6 +96,7 @@ header li:last-child {
   padding: var(--btn-padding);
   transition: 0.3s;
   display: inline-block;
+  font-weight: bold;
 }
 
 /* .signup-btn {
@@ -183,5 +184,115 @@ header ul a:hover,
   /* border: 1px solid red; */
 }
 
-.description img {
+.products {
+  /* border: 1px solid red; */
+  margin-bottom: 82px;
+}
+
+.products h2 {
+  text-align: center;
+}
+
+.products .description {
+  color: var(--color-dark);
+  text-align: center;
+  margin: 16px 0 32px 0;
+  font-size: var(--font-text);
+}
+
+.products .card {
+  /* border: 1px solid red; */
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.products .card:last-child {
+  margin-right: 0px;
+}
+
+.products .card-back > * {
+  display: block;
+}
+
+.products .type {
+  color: var(--color-coffee);
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.products .characteristics {
+  color: var(--btn-color);
+  margin-bottom: 6px;
+}
+
+.products .price {
+  color: var(--color-coffee);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.products .btn {
+  display: inline-block;
+  position: relative;
+  top: 25px;
+}
+
+.card-back {
+  background-color: #fff9f1;
+  border: 1px solid #f9c06a;
+  display: inline-block;
+  /* border-top: none; */
+}
+
+.features {
+  text-align: center;
+}
+
+.features .description {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.features .card {
+  /* border: 1px solid red; */
+  display: inline-block;
+  text-align: center;
+  padding: 36px 39px;
+  margin-right: 20px;
+}
+
+.features .card:last-child {
+  margin-right: 0px;
+}
+
+.features .card > * {
+  display: block;
+}
+
+.features .card img {
+  display: inline-block;
+}
+
+.features .type {
+  color: var(--color-coffee);
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.features .text {
+  color: var(--color-dark);
+  font-size: var(--font-text);
+  width: 176px;
+}
+
+.features .card:hover {
+  background-color: #ffeed8;
+  /* border: none; */
+  cursor: pointer;
 }
