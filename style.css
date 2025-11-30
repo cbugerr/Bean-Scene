@@ -455,15 +455,15 @@ header ul a:hover,
 }
 
 .controls:has(#control1:checked) + .slider .slides {
-  transform: translateX(0);
+  transform: translateX(-6px);
 }
 
 .controls:has(#control2:checked) + .slider .slides {
-  transform: translateX(-980px);
+  transform: translateX(-990px);
 }
 
 .controls:has(#control3:checked) + .slider .slides {
-  transform: translateX(-1960px);
+  transform: translateX(-1974px);
 }
 
 .arrows-box {
@@ -494,6 +494,7 @@ header ul a:hover,
   line-height: 90px;
   position: absolute;
   transition: 0.3s;
+  user-select: none;
 }
 
 .arrows-box label:hover {
