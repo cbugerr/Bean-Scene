@@ -253,6 +253,8 @@ header ul a:hover,
 .features .description {
   margin-top: 16px;
   margin-bottom: 32px;
+  color: var(--color-dark);
+  font-size: var(--font-text);
 }
 
 .features .card {
@@ -295,6 +297,19 @@ header ul a:hover,
   cursor: pointer;
 }
 
+.features .join p {
+  margin-top: 32px;
+  color: var(--color-dark);
+  font-size: var(--font-text);
+}
+
+.features .join h3 {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-size: 30px;
+  color: var(--color-coffee);
+}
+
 .offer {
   background-image: url(img/cup.png), url(img/coffee_bean.png),
     url(img/Group\ 36.png);
@@ -334,13 +349,23 @@ header ul a:hover,
 }
 
 .slider-wrapper {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding-block: 57px;
   padding-inline: 41px;
+  position: relative;
 }
 
 .slider {
-  border: 2px solid green;
+  /* border: 2px solid green; */
+  overflow: hidden;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.slides {
+  /* border: 2px solid red; */
+  transition: 0.4s;
+  width: 2960px;
 }
 
 .slide {
@@ -348,6 +373,10 @@ header ul a:hover,
   padding: 140px 100px 17px;
   border: 2px solid #f9c06a70;
   position: relative;
+  display: inline-block;
+  width: 980px;
+  height: 524px;
+  vertical-align: top;
 }
 
 .quote {
@@ -386,4 +415,96 @@ header ul a:hover,
   background-repeat: no-repeat;
   background-position: 0px;
   margin: 0 auto;
+}
+
+.feedback .controls {
+  position: absolute;
+  bottom: -31.5px;
+  right: 44.5%;
+}
+
+.feedback .controls input {
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 6px solid var(--color-coffee);
+  margin-right: 11px;
+  position: relative;
+  cursor: pointer;
+}
+
+.feedback .controls input:last-child {
+  margin-right: 0;
+}
+
+.feedback .controls input::after {
+  content: "";
+  position: absolute;
+  top: 2.1px;
+  left: 2.1px;
+  width: 19px;
+  height: 19px;
+  background-color: var(--color-coffee);
+  border-radius: 50%;
+  display: none;
+}
+
+.feedback .controls input:checked::after {
+  display: block;
+}
+
+.controls:has(#control1:checked) + .slider .slides {
+  transform: translateX(0);
+}
+
+.controls:has(#control2:checked) + .slider .slides {
+  transform: translateX(-980px);
+}
+
+.controls:has(#control3:checked) + .slider .slides {
+  transform: translateX(-1960px);
+}
+
+.arrows-box {
+  display: none;
+  position: relative;
+}
+
+.controls:has(#control1:checked) ~ .arrows .arrows-slide1,
+.controls:has(#control2:checked) ~ .arrows .arrows-slide2,
+.controls:has(#control3:checked) ~ .arrows .arrows-slide3 {
+  display: block;
+}
+
+.arrows {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 100%;
+}
+
+.arrows-box label {
+  background-color: var(--btn-background);
+  width: 82px;
+  height: 82px;
+  border-radius: 16px;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 90px;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.arrows-box label:hover {
+  transform: scale(1.2);
+}
+
+.arrows-box label:first-child {
+  top: 0;
+  left: 0;
+}
+
+.arrows-box label:last-child {
+  right: 110px;
 }
