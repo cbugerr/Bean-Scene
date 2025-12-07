@@ -567,6 +567,7 @@ header ul a:hover,
 .subscribe img {
   position: absolute;
   top: 138px;
+  z-index: 1;
 }
 
 .subscribe .img-left {
@@ -576,4 +577,84 @@ header ul a:hover,
 .subscribe .img-right {
   right: -230px;
   transform: scaleX(-1);
+}
+
+footer {
+  background-image: url(img/fotter_image.png), linear-gradient(#603709);
+  background-size: cover;
+
+  padding-top: 162px;
+  color: var(--color-light);
+  padding-bottom: 80px;
+}
+
+footer a {
+  color: var(--color-light);
+}
+
+footer .contacts,
+footer nav,
+footer nav ul {
+  display: inline-block;
+}
+
+footer .contacts {
+  width: 380px;
+}
+
+footer .logo {
+  font-family: var(--font-family-logo);
+  font-size: 54px;
+  color: var(--color-light);
+}
+
+footer .contacts p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-block: 20px;
+}
+
+footer .socials a {
+  margin-right: 20px;
+  vertical-align: bottom;
+}
+
+footer .socials a:last-child {
+  margin-right: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 66px;
+}
+
+footer ul li:first-child {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 55px;
+  line-height: 0;
+}
+
+footer ul li {
+  font-size: 18px;
+  line-height: 42px;
+}
+
+footer ul:last-child {
+  width: 332px;
+  margin-right: 0px;
+  vertical-align: top;
+}
+
+footer ul:last-child li:first-child {
+  margin-bottom: 55px;
+}
+
+footer ul:last-child li:nth-child(2) {
+  line-height: normal;
+}
+
+footer nav {
+  margin-left: 50px;
 }
