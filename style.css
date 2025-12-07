@@ -18,9 +18,6 @@ header .logo {
   font-style: normal;
   text-decoration: none;
 }
-body {
-  font-family: "Playfair Display", serif;
-}
 
 body,
 * {
@@ -28,6 +25,7 @@ body,
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Playfair Display", serif;
 }
 
 .container {
@@ -508,4 +506,74 @@ header ul a:hover,
 
 .arrows-box label:last-child {
   right: 110px;
+}
+
+.subscribe {
+  background-image: linear-gradient(#603709cc), url(img/Rectangle\ 14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.subscribe h2 {
+  font-size: var(--font-heading);
+  color: var(--color-light);
+}
+
+.subscribe p {
+  font-size: var(--font-text);
+  color: var(--color-light);
+  margin-top: 16px;
+  margin-bottom: 26px;
+}
+
+.subscribe input[type="email"] {
+  padding: 20px 15px 19px 26px;
+  font-size: var(--font-text);
+  border: none;
+  width: 505px;
+  border-radius: 4px;
+}
+
+.subscribe input[type="email"]::placeholder {
+  color: #00000067;
+}
+
+.subscribe input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribe input[type="submit"] {
+  color: var(--color-coffee);
+  background-color: var(--btn-background);
+  font-weight: bold;
+  font-size: 22px;
+  padding: 19px 24px 18px 24px;
+  border-radius: 4px;
+  border: none;
+  vertical-align: bottom;
+  margin-left: -8px;
+  cursor: pointer;
+}
+
+.subscribe form {
+  border: 1px solid #f9c06a5e;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.subscribe img {
+  position: absolute;
+  top: 138px;
+}
+
+.subscribe .img-left {
+  left: -230px;
+}
+
+.subscribe .img-right {
+  right: -230px;
+  transform: scaleX(-1);
 }
